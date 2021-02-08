@@ -1,2 +1,1 @@
-//export { DealerInfoLibraryLibrary } from './libraries/dealerInfoLibrary/DealerInfoLibraryLibrary';
-export { CustomGraphService } from './libraries/dealerInfoLibrary/DealerInfoLibraryLibrary';
+export { DealerInfoService } from './libraries/dealerInfoLibrary/DealerInfoLibraryLibrary';

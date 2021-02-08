@@ -3,16 +3,16 @@ import { AadHttpClient, HttpClient, IHttpClientOptions, HttpClientResponse, Http
 import { IUserItem } from "./IUserItem";
 import { ISETDealerInfo } from "./ISETDealerInfo";
 
-export interface ICustomGraphService {
+export interface IDealerInfoService {
   GetUserInfo():Promise<IUserItem>;
   GetDDInfo(nameId:string): Promise<ISETDealerInfo>;
 }
 
-export class CustomGraphService implements ICustomGraphService {
+export class DealerInfoService implements IDealerInfoService {
     
   //Create a ServiceKey which will be used to consume the service.
-  public static readonly serviceKey: ServiceKey<ICustomGraphService> =
-      ServiceKey.create<ICustomGraphService>('my-custom-app:ICustomGraphService', CustomGraphService);
+  public static readonly serviceKey: ServiceKey<IDealerInfoService> =
+      ServiceKey.create<IDealerInfoService>('my-custom-app:IDealerInfoService', DealerInfoService);
 
   private _msGraphClientFactory: MSGraphClientFactory;
   private _aadHttpClientFactory: AadHttpClientFactory;
