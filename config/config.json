@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dealer-info-library-library": {
+      "components": [
+        {
+          "entrypoint": "./lib/libraries/dealerInfoLibrary/DealerInfoLibraryLibrary.js",
+          "manifest": "./src/libraries/dealerInfoLibrary/DealerInfoLibraryLibrary.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DealerInfoLibraryLibraryStrings": "lib/libraries/dealerInfoLibrary/loc/{locale}.js"
+  }
+}

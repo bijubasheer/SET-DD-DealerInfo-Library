@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "set-dd-dealer-info-library-client-side-solution",
+    "id": "e690ffbe-aa16-421b-bd3f-ba3172b7ac2b",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true,
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "SET-Dealer Daily Menu Services API",
+        "scope": "MenuServices"
+      },
+      {  
+        "resource": "Microsoft Graph",  
+        "scope": "User.ReadBasic.All"  
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/set-dd-dealer-info-library.sppkg"
+  }
+}

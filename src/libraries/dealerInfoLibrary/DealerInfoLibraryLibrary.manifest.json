@@ -1,0 +1,9 @@
+{
+  "id": "80395b4f-b005-4004-a8ee-7cfd1c37bd26",
+  "alias": "DealerInfoLibraryLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}
